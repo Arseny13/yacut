@@ -9,4 +9,4 @@ app = Flask(__name__,
 app.config.from_object(Config)
 db = SQLAlchemy(app)
 
-from . import  views, api_views, error_handlers
+from . import views, api_views, error_handlers
