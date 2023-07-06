@@ -5,8 +5,6 @@ from yacut.forms import URLMapForm
 from yacut.models import URLMap
 from yacut.utils import get_unique_short_id, check_short_id
 
-SHORT_MAX_LENGTH = 16
-
 
 @app.route('/', methods=['GET', 'POST'])
 def index_view():
