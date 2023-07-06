@@ -1,30 +1,11 @@
-from random import choice
-import string
-import re
+from flask import redirect, render_template, flash
 
-from flask import redirect, render_template, flash, abort
-
-from . import app, db
-from .forms import URLMapForm
-from .models import URLMap
+from yacut import app, db
+from yacut.forms import URLMapForm
+from yacut.models import URLMap
+from yacut.utils import get_unique_short_id, check_short_id
 
 SHORT_MAX_LENGTH = 16
-
-
-def check_short_id(short):
-    """Проверка короткой ссылки."""
-    if len(short) > SHORT_MAX_LENGTH:
-        return False
-    pattern = re.compile(rf'^[{string.ascii_letters + string.digits}]*$')
-    return bool(re.search(pattern, short))
-
-
-def get_unique_short_id():
-    """Создание уникально короткой ссылки."""
-    while True:
-        short = ''.join([choice(string.ascii_letters + string.digits) for _ in range(6)])
-        if URLMap.query.filter_by(short=short).first() is None:
-            return short
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -55,7 +36,5 @@ def index_view():
 @app.route('/<string:short>', methods=['GET'])
 def url_view(short):
     """Вьюха перенапрвление короткой ссылки на оригинальную."""
-    urlmap = URLMap.query.filter_by(short=short).first()
-    if urlmap is not None:
-        return redirect(urlmap.original)
-    abort(404)
+    urlmap = URLMap.query.filter_by(short=short).first_or_404()
+    return redirect(urlmap.original)
