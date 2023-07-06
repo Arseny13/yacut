@@ -1,5 +1,5 @@
-from flask import jsonify, request
 from http import HTTPStatus
+from flask import jsonify, request
 
 from yacut import app, db
 from yacut.utils import check_short_id, get_unique_short_id

@@ -1,7 +1,7 @@
 from flask import jsonify, render_template
 from http import HTTPStatus
 
-from . import app, db
+from yacut import app, db
 
 
 @app.errorhandler(HTTPStatus.NOT_FOUND)
