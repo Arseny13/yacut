@@ -29,41 +29,9 @@ _https://editor.swagger.io/_
 
 
 <h2>Используемые технологии</h2>
-
-- alembic==1.7.5
-- attrs==21.4.0
-- click==8.0.3
-- faker==12.0.1;
-- flask-migrate==3.1.0
-- flask-sqlalchemy==2.5.1
-- flask-wtf==1.0.0
-- flask==2.0.2
-- greenlet
-- iniconfig==1.1.1
-- itsdangerous==2.0.1
-- jinja2==3.0.3
-- mako==1.1.6
-- markupsafe==2.0.1
-- mccabe==0.6.1
-- mixer==7.2.2
-- packaging==21.3; python_version >= '3.6'
-- pluggy==1.0.0; python_version >= '3.6'
-- py==1.11.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
-- pycodestyle==2.8.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
-- pyflakes==2.4.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
-- pyparsing==3.0.7; python_version >= '3.6'
-- pytest-env==0.6.2
-- pytest==7.1.1
-- python-dateutil==2.8.2; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
-- python-dotenv==0.19.2
-- six==1.16.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
-- sqlalchemy==1.4.29
-- tomli==2.0.1; python_version >= '3.7'
-- werkzeug==2.0.2
-- wtforms==3.0.1
-
-
-
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![flask](https://github.com/pallets/flask-website/blob/master/flask_website/static/badges/flask-powered.png)
+- sqlalchemy
 
 <h2>Как использовать</h2>
 
