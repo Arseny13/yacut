@@ -11,7 +11,7 @@ https://github.com/Arseny13
 
 Проект YaCut — это сервис укорачивания ссылок. Его назначение — ассоциировать длинную пользовательскую ссылку с короткой, которую предлагает сам пользователь или предоставляет сервис.
 
-<h2>Задание</h2>
+## Задание
 
 Ваша задача — написать сервис укорачивания ссылок и API к нему. 
 Ключевые возможности сервиса:
@@ -28,10 +28,11 @@ https://github.com/Arseny13
 _https://editor.swagger.io/_
 
 
-<h2>Используемые технологии</h2>
+## Используемые технологии
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![flask](https://github.com/pallets/flask-website/blob/master/flask_website/static/badges/flask-powered.png)
-- sqlalchemy
+![sqlalchemy]
 
 <h2>Как использовать</h2>
 
